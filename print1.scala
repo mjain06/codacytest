@@ -1,4 +1,6 @@
 package com.wehkamp
+package com.wehkamp
+package com.wehkamp
 
 import akka.actor.{ActorRef, ActorSystem}
 import com.wehkamp.ActorConstants.actorSystemName
@@ -24,4 +26,5 @@ class AppModule extends Module {
       bind[ActorRef].qualifiedWith("catalogActor").toInstance(actorContext.catalogActor),
       bind[ActorRef].qualifiedWith("basketActor").toInstance(actorContext.basketActor()))
 }
+
 
